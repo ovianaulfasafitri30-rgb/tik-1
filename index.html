@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starting Business Marketing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- background animasi -->
+  <div class="bg-anim"></div>
+
+  <!-- tombol login / logout -->
+  <div class="top-left">
+    <button id="loginBtn" onclick="showLogin()">Login</button>
+    <button id="logoutBtn" onclick="logout()">Logout</button>
+  </div>
+
+  <!-- LOGIN PAGE -->
+  <section class="page active" id="loginPage">
+    <h1>Starting Business Marketing</h1>
+    <p class="subtitle">Digital Marketing Project</p>
+
+    <div class="login-box">
+      <input type="text" placeholder="Username">
+      <input type="number" placeholder="Nomor Absen">
+      <input type="text" placeholder="Kelas">
+      <button onclick="login()">Masuk / Login</button>
+    </div>
+  </section>
+
+  <!-- MAIN PAGE -->
+  <section class="page" id="mainPage">
+    <h1 class="header">Digital Marketing – Salad Buah Fresh</h1>
+
+    <!-- FOTO PRODUK -->
+    <img src="images/salad-buah.jpg" alt="Salad Buah" class="product-img">
+
+    <!-- HARGA -->
+    <div class="box">
+      <h2>Rp 10.000 / cup</h2>
+      <p class="small-text">💰 harga ramah kantong</p>
+    </div>
+
+    <!-- ISI -->
+    <div class="box">
+      <h2>Isi Produk</h2>
+      <p class="small-text">
+        🍉 Buah melon, pir, semangka, bengkoang<br>
+        🍓 Dengan mayones yang sangat lezat
+      </p>
+    </div>
+
+    <!-- TEMPAT -->
+    <div class="box">
+      <h2>Tempat</h2>
+      <p class="small-text">📍 SMA DHARMA WANITA 1 PARE</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
