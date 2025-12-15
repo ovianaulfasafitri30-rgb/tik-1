@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", "Comic Sans MS", cursive;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #ffd1e8, #ff9fcf);
+  color: #ff4f8b;
+  overflow-x: hidden;
+}
+
+/* tombol kiri atas */
+.top-left {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.top-left button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #ff77b7;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#logoutBtn {
+  display: none;
+}
+
+.page {
+  min-height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.page.active {
+  display: flex;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+.login-box {
+  background: rgba(255,255,255,0.85);
+  padding: 25px;
+  border-radius: 20px;
+  width: 260px;
+}
+
+.login-box input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+.login-box button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #ff77b7;
+  color: white;
+  cursor: pointer;
+}
+
+.header {
+  margin-bottom: 15px;
+}
+
+.product-img {
+  width: 260px;
+  border-radius: 25px;
+  margin: 20px 0;
+  box-shadow: 0 10px 25px rgba(255,105,180,0.4);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.box {
+  background: rgba(255,255,255,0.85);
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin: 10px 0;
+  width: 90%;
+  max-width: 350px;
+}
+
+.small-text {
+  font-size: 0.9rem;
+}
+
+/* background animasi */
+.bg-anim::before,
+.bg-anim::after {
+  content: "🍓 🎀 🧸 🍒";
+  position: fixed;
+  top: -10%;
+  left: 15%;
+  opacity: 0.5;
+  animation: fall 18s linear infinite;
+}
+
+.bg-anim::after {
+  left: 70%;
+  animation-duration: 25s;
+}
+
+@keyframes fall {
+  from { transform: translateY(0); }
+  to { transform: translateY(120vh); }
+}
